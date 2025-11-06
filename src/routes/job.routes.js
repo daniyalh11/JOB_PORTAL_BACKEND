@@ -41,7 +41,7 @@ router.get('/', async (req, res) => {
       ];
     }
 
-    // Execute query
+    // Execute qu
     const [jobs, total] = await Promise.all([
       Job.find(filter)
         .sort({ postedAt: -1 })
